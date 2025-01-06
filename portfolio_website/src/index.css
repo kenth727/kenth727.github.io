@@ -8,8 +8,8 @@
   /*Color mode HSL (hue, satuiration, lightness)*/
   --first-color: hsl(353, 100%, 65%);
   --title-color: hsl(244, 24%, 25%);
-  --text-color: hsl(244, 16, 43);
-  --body-color: hsl(258, 60, 98);
+  --text-color: hsl(244, 16%, 43%);
+  --body-color: hsl(258, 60%, 98%);
   --container-color: #ffff;
 
   /*=========== Font and Typography ===========*/
@@ -124,7 +124,7 @@ img {
   margin-left: 0.875rem;
   font-weight: var(--font-bold);
   position: relative;
-  margin-bottom: 3.75.rem;
+  margin-bottom: 3.75rem;
 }
 
 .section__title::before {
