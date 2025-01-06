@@ -22,8 +22,12 @@
     margin-bottom: 0.5rem;
 }
 
+.home__education {
+    margin-bottom: 1rem;
+}
+
 .home__socials {
-    display: flex;
+    display: center;
     column-gap: 1.75rem;
     margin: 1.5rem 0;
 }
@@ -43,6 +47,12 @@
     bottom: 2.5rem;
     left: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .scroll__down {
+        bottom: 1rem;
+    }
 }
 
 .home__scroll-name {

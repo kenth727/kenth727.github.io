@@ -20,12 +20,12 @@ function App() {
     <main className='main'>
       <Home/>
       <About />
-      <Services />
+      {/* <Services /> */}
       <Resume />
-      <Portfolio />
-      <Pricing />
-      <Testimonials />
-      <Blog />
+      {/* <Portfolio /> */}
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
+      {/* <Blog /> */}
       <Contact />
     </main>
     </>
