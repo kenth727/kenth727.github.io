@@ -15,7 +15,7 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              Hi, my name is Kent and I am a software engineer. 
+              Hi my name is Kent, and I am a software engineer. 
             </p>
             <p className="about__description">
               One of my hobbies is weightlifting, as I find it benefits me both physically and mentally.

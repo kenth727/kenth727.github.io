@@ -29,7 +29,7 @@ const Data = [
       icon: "icon-briefcase",
       year: "Sept 2023 - Present",
       title: "StarGarden - Software Developer",
-      desc: "Development of Human Resources Information Systems (HRIS) software using .NET Framework in C#, SQL, and JavaScript.",
+      desc: "Development of Human Resources Information Systems (HRIS) web application.",
     },
     {
       id: 3,

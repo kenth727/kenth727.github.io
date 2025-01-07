@@ -59,6 +59,12 @@
     font-size: var(--small-font-size);
 }
 
+.home__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .mouse {
     border: 2px solid #454360;
     display: block;
