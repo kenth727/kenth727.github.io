@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import Me from "../../assets/avatar-1.svg"
+import Me from "../../assets/kent_cropped.png"
 import HeaderSocials from './HeaderSocials'
 import ScrollDown from './ScrollDown'
 import Shapes from './Shapes'
@@ -15,7 +15,7 @@ const Home = () => {
         <p className="home__education">Software Engineer</p>
 
         <div className="home__contact">
-          <a href="#contact" className="btn">Hire Me</a>
+          {/* <a href="#contact" className="btn">Hire Me</a> */}
           <a href={Resume} download="Kent_H_Resume.pdf" className="btn">Download CV</a>
         </div>
 

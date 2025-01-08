@@ -26,9 +26,15 @@ const HeaderSocials = () => {
             <i class="fa-brands fa-linkedin"></i>
         </a>
 
-        {/* <a href="https://www.instagram.com/" className="home__social-link" target="_blank">
+        <a href="https://github.com/k521" className="home__social-link" target="_blank">
             <i class="fa-brands fa-github"></i>
-        </a> */}
+        </a>
+
+        <a href="mailto:huang.cw.kent@gmail.com" className="home__social-link" rel="noopener noreferrer" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+
     </div>
   )
 }

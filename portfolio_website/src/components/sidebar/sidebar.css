@@ -54,6 +54,39 @@
     transition: .3s;
 }
 
+.tooltip {
+    position: relative; /* Needed for positioning the tooltip text */
+    display: inline-block; /* Ensures the tooltip works around the text or element */
+    cursor: pointer; /* Optional: Change the cursor on hover */
+}
+
+.tooltip-text {
+    visibility: hidden; /* Hide by default */
+    opacity: 0; /* Transparent for fade-in effect */
+    background-color: var(--first-color); /* Tooltip background color */
+    color: white; /* Tooltip text color */
+    text-align: center;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    font-weight: var(--font-bold);
+
+    /* Positioning */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 125%; /* Position to the right of the element */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    z-index: 1;
+
+    /* Fade-in effect */
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible; /* Show the tooltip on hover */
+    opacity: 1; /* Fade in */
+    transition: opacity 0.5s;
+}
+
 @media screen and (max-width: 1024px) {
     .aside {
       left: -110px;

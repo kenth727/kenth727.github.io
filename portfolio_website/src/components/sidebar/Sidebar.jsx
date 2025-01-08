@@ -15,16 +15,19 @@ const Sidebar = () => {
         <div className="nav__menu">
           <ul className="nav__list">
             
-            <li className="nav__item">
+            <li className="nav__item tooltip">
               <a href="#home" className="nav__link">
                 <i className="icon-home"></i>
               </a>
+              <span className="tooltip-text">Home</span>
             </li>
 
-            <li className="nav__item">
+            <li className="nav__item tooltip">
               <a href="#about" className="nav__link">
                 <i className="icon-user-following"></i>
               </a>
+              <span className="tooltip-text">About</span>
+
             </li>
 
             {/* <li className="nav__item">
@@ -33,10 +36,12 @@ const Sidebar = () => {
               </a>
             </li> */}
 
-            <li className="nav__item">
+            <li className="nav__item tooltip">
               <a href="#resume" className="nav__link">
                 <i className="icon-briefcase"></i>
               </a>
+              <span className="tooltip-text">Experience</span>
+
             </li>
 
             {/* <li className="nav__item">
@@ -51,10 +56,11 @@ const Sidebar = () => {
               </a>
             </li> */}
 
-            <li className="nav__item">
+            <li className="nav__item tooltip">
               <a href="#contact" className="nav__link">
                 <i className="icon-bubble"></i>
               </a>
+              <span className="tooltip-text">Message</span>
             </li>
 
           </ul>
