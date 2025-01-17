@@ -1,46 +1,31 @@
-import Work1 from "../../assets/work-1.svg";
-import Work2 from "../../assets/work-2.svg";
-import Work3 from "../../assets/work-3.svg";
-import Work4 from "../../assets/work-4.svg";
-import Work5 from "../../assets/work-5.svg";
-import Work6 from "../../assets/work-6.svg";
+import Work1 from "../../assets/trulioo-logo.png";
+import Work2 from "../../assets/cutlery-svgrepo-com.svg";
+import Work3 from "../../assets/zip-file-svgrepo-com.svg";
 
 const Menu = [
     {
       id: 1,
       image: Work1,
-      title: "Project Management Illustration",
-      category: "Design",
+      title: "Business Document Parser",
+      category: "AI & Machine Learning",
+      href: "https://www.trulioo.com/",
+      desc: "A tool leveraging GPT-4 API and Google Cloud DocumentAI to extract, classify, and summarize business-critical data from scanned documents, improving operational efficiency."
     },
     {
       id: 2,
       image: Work2,
-      title: "Guest App Walkthrough Screens",
-      category: "Art",
+      title: "Restaurant Finder",
+      category: "Mobile & Front-End Development",
+      href: "https://github.com/k521/RestaurantFinder",
+      desc: "A mobile application that provides health inspection ratings for restaurants in Surrey, utilizing real-time location-based services to enhance decision-making for users."
     },
     {
       id: 3,
       image: Work3,
-      title: "Delivery App Wireframe",
-      category: "Branding",
-    },
-    {
-      id: 4,
-      image: Work4,
-      title: "Onboarding Motivation",
-      category: "Design",
-    },
-    {
-      id: 5,
-      image: Work5,
-      title: "iMac Mockup Design",
-      category: "Creative",
-    },
-    {
-      id: 6,
-      image: Work6,
-      title: "Game Store App Concept",
-      category: "Art",
+      title: "Huffman Tree Compression",
+      category: "Algorithms & Optimization",
+      href: "https://github.com/k521/HuffmanTree",
+      desc: "An optimized data compression algorithm in C++ achieving a 50% compression ratio, designed for efficient encoding and decoding of text files."
     },
   ];
 

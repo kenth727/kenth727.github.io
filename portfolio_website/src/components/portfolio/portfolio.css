@@ -70,6 +70,22 @@
     opacity: 0;
 }
 
+.work__desc {
+    color: #ffffff; /* White text to match other text styles */
+    font-size: var(--small-font-size); /* Smaller font size */
+    margin: 0 1.25rem; /* Add spacing to align with the title */
+    position: absolute; /* Align it relative to the card */
+    top: 6rem; /* Position it below the title */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Animated slide-in effect */
+    transition: .3s ease-in-out; /* Smooth transition effect */
+}
+
+.work__card:hover .work__desc {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Slide it into view */
+}
+
 .work__button {
     color: #fff;
     position: absolute;

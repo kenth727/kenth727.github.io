@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import Me from "../../assets/kent_cropped.png"
+import Me from "../../assets/selfie_final.jpg"
 import HeaderSocials from './HeaderSocials'
 import ScrollDown from './ScrollDown'
 import Shapes from './Shapes'

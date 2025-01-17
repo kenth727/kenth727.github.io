@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import Image from "../../assets/kent_cropped.png";
+import Image from "../../assets/selfie_final.jpg";
 import AboutBox from "./AboutBox";
 import Resume from "../../assets/resume.pdf"
 

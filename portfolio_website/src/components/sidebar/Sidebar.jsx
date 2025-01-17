@@ -27,7 +27,6 @@ const Sidebar = () => {
                 <i className="icon-user-following"></i>
               </a>
               <span className="tooltip-text">About</span>
-
             </li>
 
             {/* <li className="nav__item">
@@ -41,14 +40,14 @@ const Sidebar = () => {
                 <i className="icon-briefcase"></i>
               </a>
               <span className="tooltip-text">Experience</span>
-
             </li>
 
-            {/* <li className="nav__item">
+            <li className="nav__item tooltip">
               <a href="#work" className="nav__link">
                 <i className="icon-layers"></i>
               </a>
-            </li> */}
+              <span className="tooltip-text">Projects</span>
+            </li>
 
             {/* <li className="nav__item">
               <a href="#blog" className="nav__link">

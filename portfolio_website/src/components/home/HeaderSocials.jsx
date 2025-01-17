@@ -22,11 +22,11 @@ const HeaderSocials = () => {
         <a href="https://www.instagram.com/" className="home__social-link" target="_blank">
             <i class="fa-brands fa-pinterest"></i>
         </a> */}
-        <a href="https://www.linkedin.com/in/kent-huang1/" className="home__social-link" target="_blank">
+        <a href="https://www.linkedin.com/in/kent-huang1/" className="home__social-link" rel="noopener noreferrer" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
         </a>
 
-        <a href="https://github.com/k521" className="home__social-link" target="_blank">
+        <a href="https://github.com/k521" className="home__social-link" rel="noopener noreferrer" target="_blank">
             <i class="fa-brands fa-github"></i>
         </a>
 

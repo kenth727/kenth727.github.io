@@ -34,8 +34,9 @@
 .copyright {
     color: hsl(245, 15%, 65%);
     font-size: var(--small-font-size);
-    transform: rotate(-180deg);
-    writing-mode: vertical-rl;
+    writing-mode: vertical-rl; /* Handles vertical alignment */
+    text-align: center; /* Ensures proper alignment */
+    margin: auto 0; /* Centers it in the sidebar */
 }
 
 .nav__toggle {
@@ -66,7 +67,7 @@
     background-color: var(--first-color); /* Tooltip background color */
     color: white; /* Tooltip text color */
     text-align: center;
-    padding: 5px;
+    padding: 5px 30px;
     border-radius: var(--border-radius);
     font-weight: var(--font-bold);
 
