@@ -101,7 +101,7 @@
 }
 
 .about__img {
-    border-radius: var(--border-radius); /* Round the corners */
+    border-radius: 100%; /* Round the corners */
 }
 
 @media screen and (max-width: 1024px) {

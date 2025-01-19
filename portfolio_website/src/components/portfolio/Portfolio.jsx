@@ -4,25 +4,58 @@ import Menu from './Menu'
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
-  const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
-    })
+  const [activeFilter, setActiveFilter] = useState("All");
+  const [fade, setFade] = useState(false); // State to control fade animation
 
-    setItems(updatedItems);
-  }
+  const filterItem = (categoryItem) => {
+    setFade(true); // Start fade-out animation
+    setTimeout(() => {
+      // Apply filtering after fade-out animation completes
+      const updatedItems =
+        categoryItem === "All"
+          ? Menu
+          : Menu.filter((curElem) => curElem.category === categoryItem);
+
+      setItems(updatedItems);
+      setActiveFilter(categoryItem); // Set the clicked filter as active
+      setFade(false); // Start fade-in animation
+    }, 300); // Match this duration with your fade-out animation in CSS
+  };
+
   return (
     <section className="work container section" id="work">
       <h2 className="section__title">Projects</h2>
 
       <div className="work__filters">
-        <span className="work__item" onClick={() => setItems(Menu)}>All</span>
-        <span className="work__item" onClick={() => filterItem("AI & Machine Learning")}>AI & Machine Learning</span>
-        <span className="work__item" onClick={() => filterItem("Mobile & Front-End Development")}>Mobile & Front-End Development</span>
-        <span className="work__item" onClick={() => filterItem("Algorithms & Optimization")}>Algorithms & Optimization</span>
+        <span
+          className={`work__item ${activeFilter === "All" ? "active" : "inactive"}`}
+          onClick={() => {
+            filterItem("All");
+          }}
+        >
+          All
+        </span>
+        <span
+          className={`work__item ${activeFilter === "AI & Machine Learning" ? "active" : "inactive"}`}
+          onClick={() => filterItem("AI & Machine Learning")}
+        >
+          AI & Machine Learning
+        </span>
+        <span
+          className={`work__item ${activeFilter === "Mobile & Front-End Development" ? "active" : "inactive"}`}
+          onClick={() => filterItem("Mobile & Front-End Development")}
+        >
+          Mobile & Front-End Development
+        </span>
+        <span
+          className={`work__item ${activeFilter === "Algorithms & Optimization" ? "active" : "inactive"}`}
+          onClick={() => filterItem("Algorithms & Optimization")}
+        >
+          Algorithms & Optimization
+        </span>
       </div>
 
-      <div className="work__container grid">
+      <div className={`work__container grid ${fade ? "fade-out" : "fade-in"}`}>
         {items.map((elem) => {
           const{id, image, title, category, href, desc} = elem;
 

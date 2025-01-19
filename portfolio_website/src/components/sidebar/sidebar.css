@@ -82,6 +82,17 @@
     transition: opacity 0.3s;
 }
 
+.tooltip-text::before {
+    content: ""; /* Needed for the triangle */
+    position: absolute;
+    top: 50%; /* Align with the vertical center of the tooltip */
+    right: 99%; /* Place it on the left edge of the tooltip */
+    transform: translateY(-50%); /* Center the triangle vertically */
+    border-width: 6px; /* Adjust the size of the triangle */
+    border-style: solid;
+    border-color: transparent var(--first-color) transparent transparent;
+}
+
 .tooltip:hover .tooltip-text {
     visibility: visible; /* Show the tooltip on hover */
     opacity: 1; /* Fade in */

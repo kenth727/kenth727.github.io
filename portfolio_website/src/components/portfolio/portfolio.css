@@ -12,13 +12,37 @@
     transform: .3s;
 }
 
+.work__item.active {
+    color: var(--first-color); /* Replace with your desired highlight color */
+}
+
+.work__item.inactive {
+    color: grey; /* Grey out the other items */
+    opacity: 0.8; /* Optional: To further emphasize the active state */
+}
+
 .work__item:hover {
     color: var(--first-color);
 }
 
 .work__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.875rem
+    gap: 1.875rem;
+
+    /* Fade Animations */
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.work__container.fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.work__container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .work__card {
@@ -26,6 +50,7 @@
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .work__mask {
