@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import Image from "../../assets/selfie_final_grey.jpg";
+import Image from "../../assets/headshot.jpg";
 import Resume from "../../assets/resume.pdf"
 
 const About = () => {
@@ -23,9 +23,9 @@ const About = () => {
               Motto: Goals can be achieved by taking one step at a time.
             </p>
 
-            <a href={Resume} download="Kent_H_Resume.pdf" className="btn">
+            {/* <a href={Resume} download="Kent_H_Resume.pdf" className="btn">
               Download CV
-            </a>
+            </a> */}
           </div>
 
           <div className="about__skills grid">

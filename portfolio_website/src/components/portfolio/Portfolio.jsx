@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import "./portfolio.css"
-import Menu from './Menu'
+import React, { useState } from "react";
+import "./portfolio.css";
+import Menu from "./Menu";
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
@@ -28,7 +28,9 @@ const Portfolio = () => {
 
       <div className="work__filters">
         <span
-          className={`work__item ${activeFilter === "All" ? "active" : "inactive"}`}
+          className={`work__item ${
+            activeFilter === "All" ? "active" : "inactive"
+          }`}
           onClick={() => {
             filterItem("All");
           }}
@@ -36,28 +38,36 @@ const Portfolio = () => {
           All
         </span>
         <span
-          className={`work__item ${activeFilter === "AI & Machine Learning" ? "active" : "inactive"}`}
+          className={`work__item ${
+            activeFilter === "Full-Stack Application" ? "active" : "inactive"
+          }`}
+          onClick={() => filterItem("Full-Stack Application")}
+        >
+          Full-Stack Application
+        </span>
+        <span
+          className={`work__item ${
+            activeFilter === "AI & Machine Learning" ? "active" : "inactive"
+          }`}
           onClick={() => filterItem("AI & Machine Learning")}
         >
           AI & Machine Learning
         </span>
         <span
-          className={`work__item ${activeFilter === "Mobile & Front-End Development" ? "active" : "inactive"}`}
+          className={`work__item ${
+            activeFilter === "Mobile & Front-End Development"
+              ? "active"
+              : "inactive"
+          }`}
           onClick={() => filterItem("Mobile & Front-End Development")}
         >
           Mobile & Front-End Development
-        </span>
-        <span
-          className={`work__item ${activeFilter === "Algorithms & Optimization" ? "active" : "inactive"}`}
-          onClick={() => filterItem("Algorithms & Optimization")}
-        >
-          Algorithms & Optimization
         </span>
       </div>
 
       <div className={`work__container grid ${fade ? "fade-out" : "fade-in"}`}>
         {items.map((elem) => {
-          const{id, image, title, category, href, desc} = elem;
+          const { id, image, title, category, href, desc } = elem;
 
           return (
             <div className="work__card" key={id}>
@@ -69,16 +79,20 @@ const Portfolio = () => {
               <span className="work__category">{category}</span>
               <h3 className="work__title">{title}</h3>
               <p class="work__desc">{desc}</p>
-              <a href={href} className="work__button" rel="noopener noreferrer" target="_blank">
+              <a
+                href={href}
+                className="work__button"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <i className="icon-link work__button-icon"></i>
               </a>
             </div>
-          )
+          );
         })}
       </div>
     </section>
+  );
+};
 
-  )
-}
-
-export default Portfolio
+export default Portfolio;

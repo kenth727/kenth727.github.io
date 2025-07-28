@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className="home__contact">
           {/* <a href="#contact" className="btn">Hire Me</a> */}
-          <a href={Resume} download="Kent_H_Resume.pdf" className="btn">Download CV</a>
+          {/* <a href={Resume} download="Kent_H_Resume.pdf" className="btn">Download CV</a> */}
         </div>
 
         <HeaderSocials></HeaderSocials>
